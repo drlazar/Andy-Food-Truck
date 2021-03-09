@@ -8,15 +8,10 @@ public class TruckSwitch : MonoBehaviour
     public GameObject trucks;
     public GameObject left;
     public GameObject right;
-    public GameObject TruckSelect;
 
-    void Awake()
+    void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-    private void Start()
-    {
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     void Update()

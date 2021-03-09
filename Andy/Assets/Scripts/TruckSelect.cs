@@ -8,9 +8,10 @@ public class TruckSelect : MonoBehaviour
     public GameObject LeftTruck;
     public GameObject MidTruck;
     public GameObject RightTruck;
+    public GameObject trucks;
     public GameObject TruckSelected;
 
-    void Awake()
+    void Start()
     {
         DontDestroyOnLoad(this.gameObject);
     }
@@ -21,11 +22,11 @@ public class TruckSelect : MonoBehaviour
 
     public void SetTruck()
     {
-        if (LeftTruck.transform.position == new Vector3(0.0f, 0.5f, 0.0f))
+        if (trucks.transform.position == new Vector3(5.0f, 0.0f, 0.0f))
         {
             TruckSelected = LeftTruck;
         }
-        else if (MidTruck.transform.position == new Vector3(0.0f, 0.5f, 0.0f))
+        else if (trucks.transform.position == new Vector3(0.0f, 0.0f, 0.0f))
         {
             TruckSelected = MidTruck;
         }
